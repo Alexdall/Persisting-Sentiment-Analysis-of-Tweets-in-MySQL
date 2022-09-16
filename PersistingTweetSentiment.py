@@ -4,6 +4,7 @@ import timeimport pandas as pd
 from textblob import TextBlob
 import datetime
 import mysql.connector
+
 def insertInTable(p_date,p_author, p_text, p_translate, p_sentiment,p_sensation):
     try:
         connection = mysql.connector.connect(host='localhost',
